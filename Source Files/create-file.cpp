@@ -23,4 +23,6 @@ int main()
     {
         std::cout << "CreateFileSuccess" << std::endl;
     }
+    // now we must close the file handle OR ELSE MEMORY LEAK
+    CloseHandle(hFile);
 }
